@@ -3,7 +3,7 @@
   "description": "<a name=\"readme-top\"></a>",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "jest --coverage",
+    "test": "jest",
     "start": "webpack serve --open",
     "build": "webpack"
   },
