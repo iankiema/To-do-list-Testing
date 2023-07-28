@@ -53,9 +53,9 @@ describe('deleteTask function', () => {
   test('should remove an item from the list and update localStorage', () => {
     // Initialize localStorage with some initial tasks
     const initialTodo = [
-      { description: 'Task 1' },
-      { description: 'Task 2' },
-      { description: 'Task 3' },
+      { description: 'Todo Task 1' },
+      { description: 'Todo Task 2' },
+      { description: 'Todo Task 3' },
     ];
     localStorageMock.setItem('tasks', JSON.stringify(initialTodo));
 
