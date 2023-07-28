@@ -5,7 +5,7 @@ const clearCompletedBtn = document.getElementById('btn-clear');
 
 let tasks = [];
 
-// Save tasks to local storage
+// Save tasks to local storages
 function saveTasksToLocalStorage() {
   localStorage.setItem('tasks', JSON.stringify(tasks));
 }
