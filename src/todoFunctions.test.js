@@ -106,8 +106,8 @@ describe('updateTaskDescription function', () => {
 test('should update the description of a task in the tasks array', () => {
   // Initialize tasks
   const initialTasks = [
-    { description: 'Task 1', completed: false, editing: false, index: 1 },
-    { description: 'Task 2', completed: false, editing: false, index: 2 },
+    { description: 'todo Task 1', completed: false, editing: false, index: 1 },
+    { description: 'todo Task 2', completed: false, editing: false, index: 2 },
   ];
   localStorageMock.setItem('tasks', JSON.stringify(initialTasks));
 
