@@ -1,0 +1,209 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: lightgrey;
+}
+
+.todo-container {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  position: relative;
+  padding: 0;
+}
+
+h3 {
+  text-align: start;
+  padding-left: 20px;
+  color: rgb(70, 67, 67);
+}
+
+.fa-arrows-rotate {
+  color: red;
+  width: 20px;
+}
+
+hr {
+  color: red;
+}
+
+.heading {
+  width: 100%;
+  position: relative;
+}
+
+.heading-content {
+  width: 99%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.resetImg {
+  color: red;
+}
+
+form {
+  position: relative;
+  min-width: 100%;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 90%;
+  border: none;
+  background-color: whitesmoke;
+  outline: none;
+  font-style: italic;
+  font-size: 20px;
+}
+
+button {
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.list-container {
+  width: 100%;
+  border-bottom: 1px solid grey;
+  padding: 20px;
+}
+
+.btn-clear {
+  width: 100%;
+  border: none;
+  background-color: rgb(150, 144, 144);
+  color: white;
+  font-size: 16px;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.btn-clear:hover {
+  opacity: 0.9;
+}
+
+li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+li input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+li label {
+  flex: 1;
+  word-break: break-word;
+  padding-right: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.task-actions {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transition: opacity 0.3s ease;
+  align-items: center;
+}
+
+/* li:hover .task-actions {
+  opacity: 0.9;
+} */
+
+.task-actions i {
+  cursor: pointer;
+}
+
+li.editing label {
+  display: none;
+}
+
+li.editing input[type="text"] {
+  display: block;
+  flex: 1;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+li .task-more {
+  display: block;
+  padding-bottom: 10px;
+}
+
+li .task-delete {
+  display: none;
+}
+
+li:hover .task-more {
+  display: block;
+}
+
+li.editing .task-more {
+  display: none;
+}
+
+li:hover .task-delete {
+  display: none;
+}
+
+li.editing .task-delete {
+  display: block;
+}
+
+li .task-more i,
+li .task-delete i {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+li .task-more i,
+li .task-save i,
+li .task-delete i {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.task-more i:hover {
+  color: #007bff;
+}
+
+/* Style the task more and save icons */
+
+li.editing .task-save {
+  margin-right: 0;
+}
+
+.task-more i:hover,
+.task-save i:hover {
+  color: #007bff;
+}
+
+.task-delete i:hover {
+  color: #dc3545;
+}
+
+li.dragging {
+  background-color: #f1f1f1;
+  opacity: 0.6;
+}
